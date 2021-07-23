@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* The sidepanel menu */
+.sidepanel {
+   height: 100%; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 100px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  margin-left: 20px;
+  cursor: pointer;
+  background-color: #008CBA;
+  
+  color: white;
+  padding: 10px 15px;
+  border: solid black 2px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+
+.company-logo{
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  margin: 20px 60px;
+}
+
+
+/* header section styles */
+header{
+  width: 100%;
+  background-color: #008CBA;
+}
+
+/* header section image stylng */
+.company-name{
+  padding: 20px;
+  height: 100px;
+  width: 300px;
+  border-radius: 50px;
+}
+
+
+.logout-but{
+  width:200px;
+  height: 40px;
+  background-color: orange ;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  
+  float: right;
+  display: block;
+  clear: left;
+  margin: 30px;
+}
+
+
+
+/*main section of admin-form styles*/
+
+main{
+  background-color: #F0F8FF;
+}
+
+
+.page-title{
+  font-weight: bolder;
+  font-family.: sans-serif;
+  font-size :45px;
+  margin-left: 20px;
+}
+
+.admin-form{
+  margin-left: 20px;
+  width:50%;
+  border: solid white 4px;
+  background-color:white; 
+  border-top:solid #008CBA 4px;
+  padding:20px; 
+}
+
+.output{
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  margin: 20px 60px;
+}
+
+.sub-but{
+  width:200px;
+  height: 40px;
+  background-color: #008CBA ;
+  color: white;
+  font-weight: bold;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.chp-but{
+  width:200px;
+  height: 40px;
+  background-color: orange ;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.form-control{
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+/*footer and public */
+
+
+.contact-section {
+  background-color: #222831;
+  padding:  1rem;
+  display: flex;
+  color: #eeeeee;
+ }
+  .contact-section__left {
+    width: 50%;
+    margin: 2rem; }
+  .contact-section__right {
+    width: 50%;
+    margin: 2rem; }
+
+   .navbar_link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #eeeeee; }
+    .navbar_link:hover {
+      color: #00adb5; }
+
+  .legal-text{
+    color:yellow;
+  }
+
+
+

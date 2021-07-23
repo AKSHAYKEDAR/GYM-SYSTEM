@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FITNESS CLUB</title>
+	<link rel="stylesheet" type="text/css" href="Complete.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+   <header>
+   <div id="mySidepanel" class="sidepanel">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   
+   <img src="company-logo.jpeg" class="company-logo" >
+   <a href="#">DASHBOARD</a>
+   <a href="#">USER</a>
+   <a href="#">PACKAGES</a>
+   <a href="time-slots.html">TIME SLOTS </a>
+   <a href="new-trainer.html">TRAINER</a>
+   <a href="#">REPORTS</a>
+   <a href="#">ADMIN</a>
+  </div>
+  <button class="openbtn" onclick="openNav()">&#9776; </button>
+  <img src="company-name-logo.jpg" class="company-name" id="company-name">
+
+ <script type="text/javascript">
+ 	function openNav() {
+  document.getElementById("mySidepanel").style.width = "340px";
+  var main = document.getElementById("main");
+  main.style["margin-left"] = "340px";
+  main.style["transition"] ="0.5s";
+  var logo = document.getElementById("company-name");
+  logo.style["margin-left"] = "260px";
+  logo.style["transition"] ="0.5s";
+  }
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+  var main = document.getElementById("main");
+  main.style["margin-left"] = "0";
+  main.style["transition"] ="0.5s";
+  var logo = document.getElementById("company-name");
+  logo.style["margin-left"] = "0";
+  logo.style["transition"] ="0.5s";
+}
+ </script>
+</header>
+<main id="main">
+  <p class="page-title">Admin</p>
+  <div class="admin-form">
+	
+	<form>
+	<h3>Admin Name</h3>
+    <input type="text" class="form-control" placeholder="Enter your name">
+	<h3>Admin Email Id</h3>
+    <input type="text" class="form-control" placeholder="Enter Email Id">
+    <h3>Admin Contact No.</h3>
+    <input type="text" class="form-control" placeholder="Enter Contact Number">
+    <h3>File profile picture</h3>
+    <p>
+      <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;" class=" form-control-file">
+    </p>
+    <p> <label for="file" style="cursor:pointer;">Upload Image</label></p>
+    <p><img class="output" id="output" width="200"></p>
+
+<script type="text/javascript">
+  var loadFile=function(event){
+    var image = document.getElementById("output");
+    image.src= URL.createObjectURL(event.target.files[0]);
+  }
+</script>
+
+  <button type="submit" class="sub-but">SUBMIT</button>
+  <button class="chp-but">CHANGE PASSWORD</button>
+	</form>
+</div>
+</main>
+<footer>
+	<section class="contact-section" id="contact">
+                <div class="contact-section__left">
+                    <h2>Address:</h2>
+                    <p>Shop No.11, Balaji Co. Op. Hsg. Soc., Ground Floor,Matunga Labour Camp, Near Chhota Sion Hospital, Next To HDFC ATM, 60 Feet Road,Mumbai-400 019. Maharashtra India.</p>
+                    <p class="">Phone:</p>
+                    <p class="">Email:</p>
+                </div>
+                <div class="contact-section__right">
+                    <h2>Follow us on:</h2>
+                    <p><a href="" class="navbar_link">Facebook</a></p>
+                    <p><a href="" class="navbar_link">Instagram</a></p>
+                    <p><a href="" class="navbar_link">Twitter</a></p>
+                    <p><a href="" class="navbar_link">Youtube</a></p>
+                    <p class="legal-text">&copy; Designed And Developed By Neeraj Chauhan</p>
+                </div>
+  </section>
+</footer>
+</body>
+</html>
